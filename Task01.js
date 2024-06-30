@@ -1,8 +1,8 @@
   'use strict'
 
-  const rain = [Math.random()];
-  const randomRain = rain * 100;
+  
+const randomArr = (length) => (
+  [...new Array(length)].map(() => Math.ceil(Math.random() * 100)));
+  const numbers = randomArr(50);
 
-const items = randomRain.filter(item => randomRain >= 0 && randomRain <= 100);
-  return items;
-console.log(items);
+console.log(numbers);
